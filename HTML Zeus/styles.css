@@ -1,0 +1,39 @@
+.Header{
+
+    display:block;
+    background-color: #705FD9;
+}
+
+.center{
+    display:inline;
+}
+
+.sidebar{
+    display: inline;
+    background-color: #36BFB1;
+    width: 25%;
+}
+
+.Content{
+    width: 75%;
+}
+.footer{
+    display: block;
+    background-color: #705FD9;
+}
+
+.Content1{
+    background-color: #359AF2;
+    width:100%;
+
+}
+
+.Content2{
+    background-color: #359AF2;
+    width:50%;
+}
+
+.Content3{
+    background-color: #359AF2;
+    width:50%;
+}

@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    display: grid;
+    grid-template-areas: 
+    'h  h  h  h   h   h   h  h  h   h   h   h'
+    's  s  c1  c1  c1  c1  c1   c1  c1  c1  c1  c1'
+    's  s  c1  c1  c1  c1  c1    c1  c1  c1  c1  c1'
+    's  s  c1  c1  c1  c1  c1    c1  c1  c1  c1  c1'
+    's  s  c2  c2  c2  c2  c2   c3 c3  c3  c3  c3'
+    's  s  c2  c2  c2  c2  c2   c3 c3  c3  c3  c3'
+    's  s  c2  c2  c2  c2  c2   c3 c3  c3  c3  c3'
+    'f  f  f  f   f   f   f   f  f  f  f   f';
+    gap: 5px;
+    
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    grid-area: h;
+    background-image: linear-gradient(to right, #755be9 , #a098c5);
+}
+
+.sidebar {
+    grid-area: s;
+    background-image: linear-gradient(180deg, #a6ebe7 , #075350);
+}
+
+.content-1 {
+    background-image: linear-gradient(135deg, #6350da , #2fcae6);
+    grid-area: c1;
+}
+
+.content-2 {
+    background-image: linear-gradient(135deg, #6a58e2 , #30c4df);
+    grid-area: c2;
+}
+
+.content-3 {
+    grid-area: c3;
+    background-image: linear-gradient(135deg, #6654db , #27c7e4);
+}
+
+.footer {
+    grid-area: f;
+    background-image: linear-gradient(to right, #492ec4 , #a79bdd);
+}
+
+.sidebar, .footer, .header, .content-1, .content-2, .content-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px; 
+}
